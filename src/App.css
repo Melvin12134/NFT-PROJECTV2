@@ -1,0 +1,36 @@
+:root {
+--dark-background-color: #2A2C36;
+--light-background-color: white;
+--dark-text-color: #767984;
+--light-text-color: black;
+--light-hover-color: #f5f4fa;
+--dark-hover-color: #35383f;
+--light-text-hover-color: black;
+--dark-text-hover-color: white; 
+--dark-component-color: #333540;
+--light-component-color: #f5f4fa;
+}
+body.light {
+  --background-color: var(--light-background-color);
+  --text-color: var(--light-text-color);
+  --hover-color: var(--light-hover-color);
+  --text-hover-color: var(--light-text-hover-color);
+  --component-color: var(--light-component-color);
+}
+body.dark {
+  --background-color: var(--dark-background-color);
+  --text-color: var(--dark-text-color);
+  --hover-color: var(--dark-hover-color);
+  --text-hover-color: white;
+  --component-color: var(--dark-component-color);
+}
+* {
+  padding: 0px;
+  margin: 0px
+}
+.main {
+display: flex;
+background-color: var(--background-color);
+width: 100vw;
+height: 100vh;
+}

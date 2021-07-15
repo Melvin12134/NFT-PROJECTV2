@@ -1,0 +1,150 @@
+body.light {
+    --background-color: var(--light-background-color);
+    --text-color: var(--light-text-color);
+    --hover-color: var(--light-hover-color);
+    --text-hover-color: var(--light-text-hover-color);
+    --component-color: var(--light-component-color);
+  }
+  body.dark {
+    --background-color: var(--dark-background-color);
+    --text-color: var(--dark-text-color);
+    --hover-color: var(--dark-hover-color);
+    --text-hover-color: white;
+    --component-color: var(--dark-component-color);
+  }
+.container {
+    display: flex;
+
+    flex-direction: row;
+
+    background-color: var(--background-color);
+    position: fixed;
+
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.logocontainer {
+    height: 100px;
+    
+}
+
+.space {
+    height: 200px;
+}
+
+ul li  {
+    font-family: 'Poppins';
+    font-size: 23px;
+    color: var(--text-color);
+    list-style: none;
+
+  
+}
+
+ul li a {
+    font-family: 'Poppins';
+    font-size: 23px;
+    color: var(--text-color);
+    list-style: none;
+
+    text-decoration: none;
+    display: block;
+    padding: 30px;
+    display: flex;
+}
+
+ul li svg {
+    margin-right: 30px;
+    margin-top: 3px;
+}
+
+ul li a:hover  {
+    font-family: 'Poppins';
+    font-size: 23px;
+    color: var(--text-hover-color);
+    list-style: none;
+    border-radius: 30px;
+    background-color: var(--hover-color);
+}
+
+
+ul li a.active {
+    font-family: 'Poppins';
+    font-size: 23px;
+    color: var(--text-hover-color);
+    list-style: none;
+    border-radius: 30px;
+    background-color: var(--hover-color);
+}
+
+
+.seperator {
+    height: 100vh;
+    width: 1px;
+    background-color: #707070;
+    opacity: 50%;
+
+}
+
+@media (max-width: 1000px) {
+
+    .sidebar {
+        width: 60px;
+        overflow: hidden;
+    }
+
+    ul li svg {
+        margin-left: 30px;
+    }
+
+    .space {
+        height: 100px;
+    }
+    ul li a {
+        font-family: 'Poppins';
+        font-size: 23px;
+        color: var(--text-color);
+        list-style: none;
+    
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        display: flex;
+        margin-top: 40px;
+    }
+    ul li a:hover  {
+        font-family: 'Poppins';
+        font-size: 23px;
+        color: var(--text-hover-color);
+        list-style: none;
+        border-radius: 100px;
+        background-color: var(--hover-color);
+        
+    }
+    
+    
+    ul li a.active {
+        font-family: 'Poppins';
+        font-size: 23px;
+        color: var(--text-hover-color);
+        list-style: none;
+        border-radius: 100px;
+        background-color: var(--hover-color);
+    }
+    
+
+    .text {
+        display: none;
+        
+    }
+}
